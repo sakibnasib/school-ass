@@ -90,12 +90,38 @@
     gap: 8px;
   }
   .row{
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
   }
   .colum{
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
   }
   /* banner style */
+  .nav-btn{
+    width: 170px;
+    height:50px ;
+    background-color: rgb(254, 163, 1); ;
+    color: white;
+    border-radius: 10px;
+    border: none;
+  }
+  .band{
+    font-weight: 700;
+    font-size: 2rem;
+    color:rgb(17, 17, 17) ;
+  }
+  .png{
+    display: flex;
+  }
+  .nabvar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
   .banner-container{
     max-width:1029px ;
     margin:0 auto ;
@@ -236,7 +262,7 @@ background: rgb(255, 255, 255);
     }
     .banner-abot{
         text-align: center;
-        width: 320px;
+        width: 350px;
         margin: 0% auto;
     }
     .banner-title{
@@ -248,8 +274,7 @@ background: rgb(255, 255, 255);
     .banner-img img{
        width: 300px;
        text-align: center;
-      /* margin:0 auto; */
-      margin-left: 40px;
+      margin-left: 50px;
     }
     /* stander */
     .stander-container, .last{
@@ -266,6 +291,17 @@ background: rgb(255, 255, 255);
       gap: 30px;
     }
     .footer-1{
-      width: 300px;
+      width: 400px;
+    }
+    .nabvar{
+     display: none;
+    }
+    .none{
+      display: none;
+    }
+    .row{
+      grid-template-columns: repeat(1, 1fr);
+     text-align: center;
+     margin-left:80px;
     }
   }
